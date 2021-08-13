@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-08-13T10:44:48.938Z",
+    "end": "2021-08-13T10:44:52.057Z",
+    "duration": 3119,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "938572f8-8b1d-4487-bc17-5b6a16d67459",
+      "title": "",
+      "fullFile": "cypress/integration/Tests/DecimalTest/BasicDecimalTest.js",
+      "file": "cypress/integration/Tests/DecimalTest/BasicDecimalTest.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8363f36f-4665-40b1-996d-de949c887a6f",
+          "title": "Automation Test Suite to test basic functionality of decimal",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify only one decimal is displayed in ouptut if clicked multipletimes",
+              "fullTitle": "Automation Test Suite to test basic functionality of decimal Verify only one decimal is displayed in ouptut if clicked multipletimes",
+              "timedOut": null,
+              "duration": 1485,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "calculatorPage.getACKey().click();\ncalculatorPage.getDecimalKey().click();\ncalculatorPage.getResult().should(\"have.text\", \"0.\");\ncalculatorPage.getDecimalKey().click();\ncalculatorPage.getDecimalKey().click();\ncalculatorPage.getResult().should(\"have.text\", \"0.\");\ncalculatorPage.getFiveKey().click();\ncalculatorPage.getResult().should(\"have.text\", \"0.5\");\ncalculatorPage.getZeroKey().click();\ncalculatorPage.getResult().should(\"have.text\", \"0.50\");",
+              "err": {},
+              "uuid": "43025232-60f2-41f4-865b-5f72fe093f70",
+              "parentUUID": "8363f36f-4665-40b1-996d-de949c887a6f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "43025232-60f2-41f4-865b-5f72fe093f70"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1485,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "reportFileName": "reports",
+        "overwrite": "false",
+        "html": "true",
+        "json": "true"
+      },
+      "version": "5.2.0"
+    }
+  }
+}

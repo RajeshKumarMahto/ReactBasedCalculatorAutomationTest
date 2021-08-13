@@ -1,0 +1,130 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 1,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-08-13T10:44:57.101Z",
+    "end": "2021-08-13T10:45:01.460Z",
+    "duration": 4359,
+    "testsRegistered": 2,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "729c0140-6644-4078-ac01-495bcaf97dbd",
+      "title": "",
+      "fullFile": "cypress/integration/Tests/DivisionTest/BasicDivisionTest.js",
+      "file": "cypress/integration/Tests/DivisionTest/BasicDivisionTest.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8b6be02d-1218-4afb-9a64-4466cbc342ca",
+          "title": "Automation Test Suite to test basic functionality of Division",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Divide by zero test",
+              "fullTitle": "Automation Test Suite to test basic functionality of Division Divide by zero test",
+              "timedOut": null,
+              "duration": 2376,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "calculatorPage.getACKey().click();\ntry {\n  calculatorPage.getOneKey().click();\n  calculatorPage.getDivisionKey().click();\n  calculatorPage.getZeroKey().click();\n  calculatorPage.getEqualsKey().click();\n} catch (error) {\n  console.log(\"Input is not Proper\", error);\n}\ncalculatorPage.getResult().should(\"have.text\", \"Error: [big.js] Division by zero\");",
+              "err": {
+                "message": "Error: The following error originated from your application code, not from Cypress.\n\n  > [big.js] Division by zero\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "Error: The following error originated from your application code, not from Cypress.\n\n  > [big.js] Division by zero\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at Big.push../node_modules/big.js/big.js.P.div (http://localhost:3000/static/js/0.chunk.js:602:22)\n    at operate (http://localhost:3000/static/js/main.chunk.js:1010:18)\n    at calculate (http://localhost:3000/static/js/main.chunk.js:901:72)\n    at Object.App.handleClick [as clickHandler] (http://localhost:3000/static/js/main.chunk.js:166:85)\n    at Object.ButtonPanel.handleClick [as clickHandler] (http://localhost:3000/static/js/main.chunk.js:394:18)\n    at Button.handleClick (http://localhost:3000/static/js/main.chunk.js:279:18)\n    at HTMLUnknownElement.callCallback (http://localhost:3000/static/js/0.chunk.js:6865:18)\n    at Object.invokeGuardedCallbackDev (http://localhost:3000/static/js/0.chunk.js:6914:20)\n    at invokeGuardedCallback (http://localhost:3000/static/js/0.chunk.js:6967:35)\n    at invokeGuardedCallbackAndCatchFirstError (http://localhost:3000/static/js/0.chunk.js:6982:29)\n    at executeDispatch (http://localhost:3000/static/js/0.chunk.js:7067:7)\n    at executeDispatchesInOrder (http://localhost:3000/static/js/0.chunk.js:7092:9)\n    at executeDispatchesAndRelease (http://localhost:3000/static/js/0.chunk.js:9976:9)\n    at executeDispatchesAndReleaseTopLevel (http://localhost:3000/static/js/0.chunk.js:9985:14)\n    at forEachAccumulated (http://localhost:3000/static/js/0.chunk.js:9957:12)\n    at runEventsInBatch (http://localhost:3000/static/js/0.chunk.js:10002:7)\n    at runExtractedPluginEventsInBatch (http://localhost:3000/static/js/0.chunk.js:10212:7)\n    at handleTopLevel (http://localhost:3000/static/js/0.chunk.js:10256:9)\n    at batchedEventUpdates$1 (http://localhost:3000/static/js/0.chunk.js:28402:16)\n    at batchedEventUpdates (http://localhost:3000/static/js/0.chunk.js:7474:16)\n    at dispatchEventForLegacyPluginEventSystem (http://localhost:3000/static/js/0.chunk.js:10266:9)\n    at attemptToDispatchEvent (http://localhost:3000/static/js/0.chunk.js:10986:9)\n    at dispatchEvent (http://localhost:3000/static/js/0.chunk.js:10907:23)\n    at unstable_runWithPriority (http://localhost:3000/static/js/0.chunk.js:36807:16)\n    at runWithPriority$1 (http://localhost:3000/static/js/0.chunk.js:17752:14)\n    at discreteUpdates$1 (http://localhost:3000/static/js/0.chunk.js:28419:16)\n    at discreteUpdates (http://localhost:3000/static/js/0.chunk.js:7487:16)\n    at dispatchDiscreteEvent (http://localhost:3000/static/js/0.chunk.js:10886:7)",
+                "diff": null
+              },
+              "uuid": "6190dbf4-0fcf-4911-85ac-b4fdb5080e87",
+              "parentUUID": "8b6be02d-1218-4afb-9a64-4466cbc342ca",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Random single digit divison test",
+              "fullTitle": "Automation Test Suite to test basic functionality of Division Random single digit divison test",
+              "timedOut": null,
+              "duration": 352,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "calculatorPage.getACKey().click();",
+              "err": {},
+              "uuid": "b08fc75e-b3f6-4ee3-bb8d-a58de4e8e408",
+              "parentUUID": "8b6be02d-1218-4afb-9a64-4466cbc342ca",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "b08fc75e-b3f6-4ee3-bb8d-a58de4e8e408"
+          ],
+          "failures": [
+            "6190dbf4-0fcf-4911-85ac-b4fdb5080e87"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 2728,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "reportFileName": "reports",
+        "overwrite": "false",
+        "html": "true",
+        "json": "true"
+      },
+      "version": "5.2.0"
+    }
+  }
+}
